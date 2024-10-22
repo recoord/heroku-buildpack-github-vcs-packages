@@ -12,7 +12,7 @@ http_get() {
 
 echo "-----> Setting up git SSH to HTTPS override"
 
-read -r GITHUB_PAT < "$ENV_DIR/GITHUB_VCS_PACKAGES_ACCESS_TOKEN"
+GITHUB_PAT=$(cat "$ENV_DIR/GITHUB_VCS_PACKAGES_ACCESS_TOKEN")
 
 
 # Git URL as suggested by the GitHub UI for copy pasting.
